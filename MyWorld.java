@@ -21,5 +21,6 @@ public class MyWorld extends World
         bear b = new bear();
         addObject(b, 200, 200);
         
+        
     }
 }

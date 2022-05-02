@@ -1,11 +1,14 @@
 #Greenfoot project file
 class.bear.image=wombat.png
+dependency1.from=MyWorld
+dependency1.to=bear
+dependency1.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=100
 editor.fx.0.y=100
 height=744
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=2
 project.charset=UTF-8
 publish.hasSource=false
