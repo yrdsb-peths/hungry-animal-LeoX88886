@@ -37,17 +37,17 @@ public class bear extends Actor
         
         if(Greenfoot.isKeyDown("w"))
         {
-        int x = getX();
-        int y = getY();
-        setLocation(x, y -5);
+            int x = getX();
+            int y = getY();
+            setLocation(x, y -5);
 
         }
         
         if(Greenfoot.isKeyDown("s"))
         {
-        int x = getX();
-        int y = getY();
-        setLocation(x, y + 5);
+            int x = getX();
+            int y = getY();
+            setLocation(x, y + 5);
         }
 
     }
