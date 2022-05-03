@@ -21,6 +21,8 @@ public class MyWorld extends World
         bear b = new bear();
         addObject(b, 200, 200);
         
+        banana ban = new banana();
+        addObject(ban, 100, 300);
         
     }
 }

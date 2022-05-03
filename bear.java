@@ -19,6 +19,12 @@ public class bear extends Actor
         /*move(1);
         turn(1);
         */
+       
+        if(isTouching(banana.class))
+        {
+            removeTouching(banana.class);
+        }
+        
         if(Greenfoot.isKeyDown("d"))
         {
             move(3);
