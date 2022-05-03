@@ -27,23 +27,27 @@ public class bear extends Actor
         
         if(Greenfoot.isKeyDown("d"))
         {
-            move(3);
+            move(5);
         }
         
         if(Greenfoot.isKeyDown("a"))
         {
-            move(-3);
+            move(-5);
         }
         
         if(Greenfoot.isKeyDown("w"))
         {
-            turn(5);
+        int x = getX();
+        int y = getY();
+        setLocation(x, y -5);
 
         }
         
         if(Greenfoot.isKeyDown("s"))
         {
-            turn(-5);
+        int x = getX();
+        int y = getY();
+        setLocation(x, y + 5);
         }
 
     }
