@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class bear extends Actor
+public class Bear extends Actor
 {
     /**
      * Act - do whatever the bear wants to do. This method is called whenever
@@ -16,15 +16,7 @@ public class bear extends Actor
     {
         // Add your action code here.
         
-        /*move(1);
-        turn(1);
-        */
        
-        if(isTouching(banana.class))
-        {
-            removeTouching(banana.class);
-        }
-        
         if(Greenfoot.isKeyDown("d"))
         {
             move(5);
@@ -57,9 +49,9 @@ public class bear extends Actor
     
     public void pac()
     {
-        if(isTouching(banana.class))
+        if(isTouching(Banana.class))
         {
-            removeTouching(banana.class);
+            removeTouching(Banana.class);
             MyWorld world = (MyWorld) getWorld();
             world.spawnBanana();
         }

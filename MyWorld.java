@@ -18,12 +18,14 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
         
-        bear b = new bear();
+        Bear b = new Bear();
         addObject(b, 200, 200);
         
       
         //addObject(ban, 400, 500);
         
+        spawnBanana();
+        spawnBanana();
         spawnBanana();
         
     }
@@ -32,7 +34,7 @@ public class MyWorld extends World
     {
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
-        banana ban = new banana();
+        Banana ban = new Banana();
         addObject(ban, x, y);
     }
 }
