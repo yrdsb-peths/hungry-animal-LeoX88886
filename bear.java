@@ -49,6 +49,19 @@ public class bear extends Actor
             int y = getY();
             setLocation(x, y + 5);
         }
+        
+        pac();
+        
 
+    }
+    
+    public void pac()
+    {
+        if(isTouching(banana.class))
+        {
+            removeTouching(banana.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.spawnBanana();
+        }
     }
 }

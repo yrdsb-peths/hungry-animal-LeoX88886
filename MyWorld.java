@@ -21,15 +21,18 @@ public class MyWorld extends World
         bear b = new bear();
         addObject(b, 200, 200);
         
-        for(int i=0; i<20; i++)
-        {
-            banana ban = new banana();
-            addObject(ban, Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(400));
-        }
-        
+      
         //addObject(ban, 400, 500);
         
+        spawnBanana();
         
-        
+    }
+    
+    public void spawnBanana()
+    {
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        banana ban = new banana();
+        addObject(ban, x, y);
     }
 }
