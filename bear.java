@@ -16,15 +16,24 @@ public class Bear extends Actor
     {
         // Add your action code here.
         
+        
        
         if(Greenfoot.isKeyDown("d"))
         {
             move(5);
+            if(Greenfoot.isKeyDown("c"))
+            {
+                move(10);
+            }
         }
         
         if(Greenfoot.isKeyDown("a"))
         {
             move(-5);
+            if(Greenfoot.isKeyDown("c"))
+            {
+                move(-10);
+            }
         }
         
         if(Greenfoot.isKeyDown("w"))
@@ -32,6 +41,12 @@ public class Bear extends Actor
             int x = getX();
             int y = getY();
             setLocation(x, y -5);
+            if(Greenfoot.isKeyDown("c"))
+            {
+                
+                setLocation(x, y -10);   
+            }
+            
 
         }
         
@@ -40,6 +55,11 @@ public class Bear extends Actor
             int x = getX();
             int y = getY();
             setLocation(x, y + 5);
+              if(Greenfoot.isKeyDown("c"))
+            {
+                
+                setLocation(x, y + 10);   
+            }
         }
         
         pac();
