@@ -74,6 +74,7 @@ public class Bear extends Actor
             removeTouching(Banana.class);
             MyWorld world = (MyWorld) getWorld();
             world.spawnBanana();
+            world.increaseScore();
         }
     }
 }
