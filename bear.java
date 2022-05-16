@@ -72,6 +72,7 @@ public class Bear extends Actor
         if(isTouching(Banana.class))
         {
             removeTouching(Banana.class);
+            Greenfoot.playSound("sounds/smw_coin.wav");
             MyWorld world = (MyWorld) getWorld();
             world.spawnBanana();
             world.increaseScore();
