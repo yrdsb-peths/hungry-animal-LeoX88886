@@ -22,8 +22,9 @@ public class Bear extends Actor
         for(int i = 0; i < images.length; i++)
         {
              images[i] = new GreenfootImage("images/totalbear/idle" + i + ".png");
+             images[i].scale(175, 150);
         }
-        setImage(images[3]);
+        setImage(images[0]);
     }
     
     int curIndex = 0;
