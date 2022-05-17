@@ -12,6 +12,29 @@ public class Bear extends Actor
      * Act - do whatever the bear wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private GreenfootImage[] images;
+        
+    public Bear()
+    {
+            //GreenfootImage image = new GreenfootImage("images/elephant_idle/idle0.png");
+        images = new GreenfootImage[8];
+        images[0] = new GreenfootImage("images/totalbear/idle0.png");
+        for(int i = 0; i < images.length; i++)
+        {
+             images[i] = new GreenfootImage("images/totalbear/idle" + i + ".png");
+        }
+        setImage(images[3]);
+    }
+    
+    int curIndex = 0;
+    public void idleAction()
+    {
+        setImage(images[curIndex]);
+        curIndex++;
+        curIndex %= 8;
+    }
+    
+    
     public void act()
     {
         // Add your action code here.
@@ -63,6 +86,7 @@ public class Bear extends Actor
         }
         
         pac();
+        idleAction();
         
 
     }
