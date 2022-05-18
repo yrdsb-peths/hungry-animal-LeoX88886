@@ -13,6 +13,8 @@ public class Bear extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private GreenfootImage[] images;
+    private SimpleTimer actionTimer;
+    private int delay = 0;
         
     public Bear()
     {
@@ -25,14 +27,21 @@ public class Bear extends Actor
              images[i].scale(175, 150);
         }
         setImage(images[0]);
+        
+        actionTimer = new SimpleTimer();
+        actionTimer.mark();
     }
     
     int curIndex = 0;
     public void idleAction()
     {
-        setImage(images[curIndex]);
-        curIndex++;
-        curIndex %= 8;
+        if(actionTimer.millisElapsed() > 100)
+        {
+            setImage(images[curIndex]);
+            curIndex++;
+            curIndex %= 8;
+            actionTimer.mark();
+        }
     }
     
     
