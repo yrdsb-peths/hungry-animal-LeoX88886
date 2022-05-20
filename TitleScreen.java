@@ -39,23 +39,20 @@ public class TitleScreen extends World
     private void prepare()
     {
         Bear bear = new Bear();
-        addObject(bear,431,100);
+        addObject(bear,298,84);
         bear.setLocation(298,84);
 
         Label label = new Label("Press <space_key> to play", 50);
         addObject(label,292,277);
-        label.setLocation(342,251);
+        label.setLocation(320,251);
 
         Label label2 = new Label("Use <WASD> to move", 30);
         addObject(label2,292,281);
-        label2.setLocation(320,304);
+        label2.setLocation(315,304);
 
 
-        label.setLocation(319,344);
-        label.setLocation(344,242);
-        label2.setLocation(317,306);
-        Label label3 = new Label("Press <C> to Sprint", 40);
+        Label label3 = new Label("Press <C> to Sprint", 30);
         addObject(label3,226,360);
-        label3.setLocation(316,351);
+        label3.setLocation(315,340);
     }
 }
