@@ -50,13 +50,12 @@ public class TitleScreen extends World
         addObject(label2,292,281);
         label2.setLocation(320,304);
 
-        Label label3 = new Label("Press <C_key> to sprint", 30);
-        addObject(label3,279,344);
-        label3.setLocation(389,234);
 
-        
         label.setLocation(319,344);
         label.setLocation(344,242);
         label2.setLocation(317,306);
+        Label label3 = new Label("Press <C> to Sprint", 40);
+        addObject(label3,226,360);
+        label3.setLocation(316,351);
     }
 }
