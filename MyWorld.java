@@ -41,6 +41,7 @@ public class MyWorld extends World
         int y = 0;
         Banana ban = new Banana();
         addObject(ban, x, y);
+        
     }
     
     public void increaseScore()

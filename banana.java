@@ -12,6 +12,13 @@ public class Banana extends Actor
      * Act - do whatever the banana wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private GreenfootImage newImage = new GreenfootImage ("images/BananaAni/idleb1.png");
+    
+    public Banana()
+    {
+        newImage.scale(50, 50);
+        setImage(newImage);
+    }
     public void act()
     {
         // Add your action code here.
