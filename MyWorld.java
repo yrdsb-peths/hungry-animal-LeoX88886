@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     public int score = 0;
-    
     public Label scoreLabel = new Label(0, 80);
+    int level = 1;
     
     
     /**
@@ -41,6 +41,7 @@ public class MyWorld extends World
         int y = 0;
         Banana ban = new Banana();
         addObject(ban, x, y);
+        ban.setSpeed(level);
         
     }
     
@@ -48,6 +49,10 @@ public class MyWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+        if(score % 5 == 0)
+        {
+            level+=1;
+        }
     }
     
     public void gameOver()

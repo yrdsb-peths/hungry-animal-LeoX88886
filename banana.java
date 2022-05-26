@@ -14,11 +14,15 @@ public class Banana extends Actor
      */
     private GreenfootImage newImage = new GreenfootImage ("images/BananaAni/idleb1.png");
     
+    int speed = 1;
+    
     public Banana()
     {
         newImage.scale(50, 50);
         setImage(newImage);
     }
+    
+    
     public void act()
     {
         // Add your action code here.
@@ -38,5 +42,9 @@ public class Banana extends Actor
         }
     }
     
+    public void setSpeed(int spd)
+    {
+        speed = spd;
+    }
     
 }
